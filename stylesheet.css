@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Chango';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Chango Regular'), local('Chango-Regular'), url(https://fonts.gstatic.com/s/chango/v6/2V0cKI0OB5U7WaJCyHe5.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@media screen and (max-width: 768px){
+    nav{
+        margin-top: 10px;
+        display: flex;
+        float: left;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .homepics{
+        display:flex;
+        flex-flow: column;
+    }
+}
+
+  @media screen and (min-width: 769px){
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navlink{
+        padding: 5px;
+        display:inline;
+        border-right: 1px solid black;
+    }
+
+    .navlink:last-child{
+        border-right: none;
+    }
+    
+    nav a{
+        text-decoration: none;
+    }
+
+    .homepics{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+html, body{
+    height: 100%;
+}
+
+nav{
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    color: rgb(0, 0, 0);
+}
+
+.link:visited{
+    color:rgb(rgb(52, 0, 209));
+}
+
+.link:hover{
+    color:rgb(100, 149, 237);
+}
+
+header{
+    font-family: 'Chango';
+    text-align:center;
+}
+
+body{
+    font-family: 'Raleway';
+}
+
+img{
+    margin: 10px;
+    border-radius: 50px 150px;
+    box-shadow: 10px 10px rgb(52, 0, 209);
+    max-width: 90%;
+}
+
+.container{
+    display:flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 300px;  
+    padding: 5px;
+}
+
+.contact{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border: 3px black solid;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact input{
+    margin: 5px;
+}
+
+.contact textarea{
+    margin: 5px;
+}
