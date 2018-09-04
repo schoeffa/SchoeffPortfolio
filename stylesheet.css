@@ -25,7 +25,7 @@
     }
 
     .homepics{
-        display:flex;
+        width: 100%;
         flex-flow: column;
     }
 }
@@ -37,16 +37,10 @@
         right: 0;
     }
 
-    nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
     .navlink{
         padding: 5px;
         display:inline;
-        border-right: 1px solid black;
+        border-right: 1px solid rgb(0, 0, 0);
     }
 
     .navlink:last-child{
@@ -58,13 +52,8 @@
     }
 
     .homepics{
-        display:flex;
         justify-content: space-between;
     }
-}
-
-html, body{
-    height: 100%;
 }
 
 nav{
@@ -87,6 +76,12 @@ p{
     color:rgb(100, 149, 237);
 }
 
+nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 header{
     font-family: 'Chango';
     text-align:center;
@@ -96,18 +91,27 @@ body{
     font-family: 'Raleway';
 }
 
-img{
+.image{
+    box-sizing: border-box;
+}
+
+.image > img{
     margin: 10px;
     border-radius: 50px 150px;
     box-shadow: 10px 10px rgb(52, 0, 209);
     max-width: 90%;
 }
 
+.homepics{
+    display: flex;
+    box-sizing: border-box;
+}
+
 .container{
     display:flex;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 300px;  
+    margin-top: 200px;  
     padding: 5px;
 }
 
@@ -118,15 +122,18 @@ img{
     margin: 0 auto;
     width: 50%;
     padding: 10px;
-    border: 3px black solid;
+    border: 3px rgb(0, 0, 0) solid;
     justify-content: center;
     text-align: center;
 }
 
-.contact input{
+.contact > input{
+    max-width: 100%;
     margin: 5px;
 }
 
-.contact textarea{
+.contact > textarea{
+    width: 100%;
+    min-height: 200px;
     margin: 5px;
 }
